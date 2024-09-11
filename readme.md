@@ -26,7 +26,7 @@ brew install hashicorp/tap/terraform
 This will be required for Terraform to create the VM via the Digital Ocean API.
 [How to create a personal access token](https://docs.digitalocean.com/reference/api/create-personal-access-token/)
 
-Copy your token.
+Copy your token, and set it as an environment variable.
 
 ``` shell
 export TF_VAR_DIGITALOCEAN_TOKEN='paste_token_here'
@@ -58,7 +58,7 @@ curl -X GET \
   "https://api.digitalocean.com/v2/account/keys" | jq '.'
 ```
 
-In either command, make note of the ID in the curl output. It must be set as an ENV Var.
+In either command, make note of the ID in the curl output. It must be set as an environment variable.
 
 ``` shell
 export TF_VAR_SSH_KEY='paste_key_id_here'
