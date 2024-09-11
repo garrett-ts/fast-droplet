@@ -8,11 +8,6 @@ terraform {
 }
 
 provider "digitalocean" {
-
-    # Env variable do_token must be set before using terraform plan or terraform apply. 
-    # It must be prepended with TF_VAR_ in order for terraform to recognize it
-    # export TF_VAR_DIGITALOCEAN_TOKEN='$key'
-
   token = var.DIGITALOCEAN_TOKEN
 }
 
