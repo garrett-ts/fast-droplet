@@ -1,10 +1,18 @@
-# DO - Quick VM
+# Fast Droplet
 
 For spinning up an Ubuntu VM in Digital Ocean really fast!
 
 ## Steps
 
-### 1. Install Terraform
+### 1. Clone the repo
+
+``` shell
+git clone https://github.com/garrett-ts/fast-droplet.git
+
+cd fast-droplet
+```
+
+### 2. Install Terraform
 
 You can do so on MacOS with homebrew:
 
